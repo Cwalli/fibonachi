@@ -62,9 +62,10 @@ public class Main {
                 array [14] [0] = "Где вода стоит столбом?";
                 array [14] [1] = "В стакане";
 
-                // Запрос номера вопроса
 
+                    // НАчало цикла вывода
                 for(; ; ) {
+                    // Запрос номера вопроса
                     Scanner in = new Scanner(System.in);
                     System.out.println("Введите номер вопроса от 1 до 15");
                     int n = in.nextInt() - 1;
@@ -77,6 +78,7 @@ public class Main {
                         System.out.println("Ответ:" + array[n][1]);
 
                     } else {
+                        // Завершение программы
                         System.out.println("Прерывание программы, введено неверное значение вопроса");
                         break;
                     }
